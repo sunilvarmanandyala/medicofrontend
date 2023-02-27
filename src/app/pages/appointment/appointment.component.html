@@ -1,0 +1,79 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt "> 
+         <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img 
+                    class="img-fluid" 
+                    style="width:100px;" 
+                    src="/assets/appointment.png" 
+                    alt="">
+
+                </div>
+
+                <h1 class="text-center">Book Your Appointment !</h1>
+                <div class="container text-center">
+                    <form (ngSubmit)="doSubmit()">
+                        <mat-form-field class="full-width">
+                            <mat-label>Patientname</mat-label>
+                            <input [(ngModel)]="credentials.patientname" 
+                            name="username" required
+                            name="patientname"
+                            required
+                            type="text" 
+                            matInput />
+                        </mat-form-field>
+<!-- <mat-form-field appearance="fill">
+  <mat-label>Select Doctor</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let doctor of doctors" [value]="doctor.doctor_Id">
+      {{doctor.username}
+    </mat-option>
+  </mat-select>
+</mat-form-field> -->
+            
+                        <mat-form-field class="full-width">
+                            <mat-label>Doctorname</mat-label>
+                            <input 
+                            [(ngModel)]="credentials.doctorname" 
+                            required
+                            name="doctorname"
+                            required
+                            type="text" 
+                            matInput />
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                            <mat-label>AppointmentType</mat-label>
+                            <input
+                            [(ngModel)]="credentials.appointmentType" 
+                            required
+                            name="appointmentType"
+                            required
+                            type="text" 
+                            matInput />
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width">
+                            <mat-label>AppointmentDate</mat-label>
+                            <input 
+                            [(ngModel)]="credentials.appointmentDate" 
+                            required type="date" name="begin" 
+                             placeholder="dd-mm-yyyy" value="" 
+                             matInput [min]="today" [max]="today">
+                        </mat-form-field>
+
+                        <div class="container text-center">
+
+                            <button type="submit" mat-raised-button color="primary">Book Appointment</button>
+                            <button style="margin-left: 10px" type="reset" mat-raised-button color="accent">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+         </div>
+
+    </div>
+</div>

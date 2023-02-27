@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="card">
+  
+      <h1>Account Details</h1>
+      <form (ngSubmit)="doSubmit()">
+        <!-- <h3>ID: {{id}}</h3> -->
+  
+        <form (ngSubmit)="doSubmit()">
+            <!-- <small class="text-danger">{{msg}}</small> -->
+            <mat-form-field class="full-width">
+                <mat-label>Username</mat-label>
+                <input 
+                [(ngModel)]="credentials.username"
+                name="username"
+                required
+                type="text" 
+                matInput />
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Password</mat-label>
+                <input 
+                [(ngModel)]="credentials.password"
+                name="username"
+                required
+                type="password" 
+                matInput />
+            </mat-form-field>
+  
+      <button mat-raised-button color="primary" class="sign-btn" type="submit">Update</button>
+    </form>

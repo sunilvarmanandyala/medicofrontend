@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <a class="navbar-brand" routerLink="">STLmedico</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link active " routerLink="" routerLinkActive="active-link">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Login</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="login" routerLinkActive="active-link">Patient Login</a></li>
+          <li><a class="dropdown-item" routerLink="login-doctor" routerLinkActive="active-link">Doctor Login</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="login" routerLinkActive="active-link">Login</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Register</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="register" routerLinkActive="active-link">Patient Register</a></li>
+          <li><a class="dropdown-item" routerLink="register-doctor" routerLinkActive="active-link">Doctor Register</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="appointment" routerLinkActive="active-link">Appointment</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link" routerLink="facilities" routerLinkActive="active-link">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </nav>

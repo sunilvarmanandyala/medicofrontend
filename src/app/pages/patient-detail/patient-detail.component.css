@@ -1,0 +1,23 @@
+.card{
+    margin: auto;
+    padding: 50px;
+  }
+  
+  .field{
+    width: 100%;
+  }
+  
+  .container{
+    margin-top: 50px;
+  }
+  
+  .sign-btn{
+    background-color: #0444a3;
+  }
+  .sign-btn:hover{
+    background-color: #033682 ;
+  }
+  .nav-sign{
+    margin-left: 10px;
+  }
+  

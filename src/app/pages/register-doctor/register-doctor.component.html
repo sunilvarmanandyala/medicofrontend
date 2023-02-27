@@ -1,0 +1,66 @@
+<div class="bootstrap-wrapper">
+  <div class="container mt">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <div class="container text-center">
+              <img class="img-fluid" style="width: 100px;" src="/assets/login1.png" alt="" /> 
+          </div>
+
+          <h1 class="text-center"> Doctor Registration page !!</h1>
+
+          <!-- creating form -->
+
+          <form (ngSubmit)="onSubmit()">
+              <mat-form-field class="full-width">
+                  <mat-label>Username</mat-label>
+                  <input 
+                  [(ngModel)]="credentials.username" 
+                  name="username" required
+                  type="text" matInput />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                  <mat-label>Password</mat-label>
+                  <input 
+                  [(ngModel)]="credentials.password"
+                  name="password" required
+                  type="password" matInput />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                  <mat-label>Doctor Phno</mat-label>
+                  <input 
+                  [(ngModel)]="credentials.doctorPhNo" required
+                  name="doctorPhNo"
+                  type="text" matInput />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                  <mat-label>Specilization</mat-label>
+                  <input 
+                  [(ngModel)]="credentials.specilization" required
+                  name="specilization"
+                  type="text" matInput />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <mat-label>Experience</mat-label>
+                <input 
+                [(ngModel)]="credentials.experience" required
+                name="experience"
+                type="text" matInput />
+              </mat-form-field>
+              <div class="container text-center">
+
+              <button type="submit" mat-raised-button color="primary">Register</button>
+              <button style="margin-left: 10px;" type="reset" mat-raised-button color="accent">Reset</button>
+              
+
+          </div>
+
+              
+          </form>
+          <!-- <br />
+
+          {{credentials | json}} -->
+
+      </div>
+    </div>
+  </div>
+</div>

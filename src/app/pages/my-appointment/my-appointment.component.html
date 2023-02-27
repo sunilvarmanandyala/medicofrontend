@@ -1,0 +1,12 @@
+<div class="container text-center">
+<h1>You can Check Your Appointment Details Here !! </h1>
+<mat-card class="mdcardcontact" *ngFor="let item of data ">
+    <mat-card-header style="background-color: black;   width:100%"> Appointment Details </mat-card-header>
+    <mat-card-content>id= {{item.id}}</mat-card-content>
+    <mat-card-content>Patientname= {{item.patientname}}</mat-card-content>
+    <mat-card-content>Doctorname= {{item.doctorname}}</mat-card-content>
+    <mat-card-content>AppointmentDate= {{item.appointmentDate}}</mat-card-content>
+    <mat-card-content>appointmentType= {{item.appointmentType}}</mat-card-content>
+</mat-card>
+</div>
+  
